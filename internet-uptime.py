@@ -4,7 +4,7 @@ from datetime import date
 
 def internet_on():
     try:
-        urllib.request.urlopen('http://google.se', timeout=5)
+        urllib.request.urlopen('https://www.google.com', timeout=5)
         return 1
     except urllib.request.URLError:
         print('URLError')
